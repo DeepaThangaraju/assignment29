@@ -80,7 +80,7 @@ function Updateuser({ employee }) {
                     name="name"
                     value={values.name}
                     style={sty}
-                    className="add" saz
+                    className="add"
                     label="User Name"
                     variant="outlined"
                     onChange={handleChange}
