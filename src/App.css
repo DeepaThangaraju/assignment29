@@ -1,38 +1,66 @@
 .App {
   text-align: center;
+  /* font-family: 'Dancing Script', cursive; */
+/* /* font-family: 'Lemonada', cursive; */
+font-family: 'Merienda', cursive;
+ 
+  
+}
+nav{
+  background-color:papayawhip ;
+  padding:1rem;
+}
+ul li{
+  display: block;
+  margin:1rem;
+}
+li a{
+  text-decoration: none;
+}
+.add{
+  width:50%;
+  border:1px solid black;
+  margin:1rem 1rem 1rem 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.person{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+.user_pic{
+  width:8rem;
+  height:8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.details{
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:600px){
+  .person{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width:800px){
+  .person{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  ul li{
+    display:inline;
+  }
+}
+@media (min-width:1000px){
+  .person{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
 }
