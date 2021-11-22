@@ -65,6 +65,7 @@ function App() {
     <div className="App">
       <nav>
         <ul>
+
           <li><Link to="/users"><Button variant="contained">User list</Button></Link></li>
           <li><Link to="/create-user"><Button variant="contained">Create User</Button></Link></li>
           <li><Link to="/edit-user/"><Button variant="contained">Edit User</Button></Link></li>
@@ -75,7 +76,7 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/">
-
+          Welcome 😊☺☺😊
         </Route>
         <Route path="/users">
           <Userlist />

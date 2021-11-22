@@ -59,6 +59,7 @@ export function Userlist() {
 export function UserDetails() {
     const { id } = useParams();
     console.log(id);
+    const history = useHistory();
     // const employee = users[id];
     const [employee, setEmployee] = useState({});
     useEffect(() => {
@@ -75,6 +76,7 @@ export function UserDetails() {
                 <p>EmployeeId:{employee.EmployeeId}</p>
                 <p>Designation:{employee.designation}</p>
                 <p>Salary:{employee.salary}</p>
+                <button onClick={() => history.goBack()}>BACK</button>
             </div>
         </div>
     )

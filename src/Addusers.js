@@ -8,7 +8,7 @@ import { useFormik } from "formik";
 
 const formValidationSchema = yup.object(
     {
-        name: yup.string().required("Why not fill the name?"),
+        name: yup.string().min(3).required("Why not fill the name?"),
         designation: yup.string().min(5).required("Why not fill the designation?"),
         EmployeeId: yup.string().required("Why not fill the EmployeeId?"),
         salary: yup.number().required("Why not fill the salary?"),
